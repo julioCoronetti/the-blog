@@ -1,9 +1,9 @@
-"use client";
+import { Header } from "@/components/Header";
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <div>
-      <h1>a</h1>
+      <Header />
     </div>
   );
 }
