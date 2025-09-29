@@ -1,10 +1,9 @@
-import { Header } from "@/components/Header";
+import { SpinLoader } from "@/components/SpinLoader";
 
 export default async function HomePage() {
-  console.log('oi')
   return (
     <div>
-      <Header />  
+      <SpinLoader />
     </div>
   );
 }
