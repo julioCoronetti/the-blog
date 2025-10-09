@@ -22,7 +22,7 @@ export async function PostsList() {
               }}
             />
 
-            <PostSummary post={post} postHeading="h2" postLink={postLink} />
+            <PostSummary postHeading="h2" postLink={postLink} createdAt={post.createdAt} excerpt={post.excerpt} title={post.title} />
           </div>
         );
       })}
