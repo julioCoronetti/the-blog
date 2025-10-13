@@ -14,12 +14,13 @@ export function PostHeading({
   const headingClassesMap = {
     h1: "text-2xl/tight font-extrabold sm:text-4xl",
     h2: "text-2xl/tight font-bold",
-  }
-
+  };
 
   return (
     <Tag className={headingClassesMap[Tag]}>
-      <Link className="hover:text-slate-600 transition" href={url}>{children}</Link>
+      <Link className="hover:text-slate-600 transition" href={url}>
+        {children}
+      </Link>
     </Tag>
   );
 }

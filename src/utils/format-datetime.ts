@@ -1,4 +1,7 @@
-import { format, formatDistanceToNow as dateFnsFormatDistanceToNow } from "date-fns";
+import {
+  format,
+  formatDistanceToNow as dateFnsFormatDistanceToNow,
+} from "date-fns";
 import { ptBR } from "date-fns/locale";
 
 export function formatDatetime(rawDate: string): string {

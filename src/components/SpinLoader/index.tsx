@@ -1,6 +1,6 @@
 type SpinLoaderProps = {
   className?: string;
-}
+};
 
 export function SpinLoader({ className = "" }: SpinLoaderProps) {
   return (
