@@ -1,16 +1,16 @@
 import { PostFeatured } from "@/components/PostFeatured";
 import { PostsList } from "@/components/PostsList";
-import { SpinLoader } from "@/components/SpinLoader";
 import { Suspense } from "react";
+import Loading from "./loading";
 
 export default async function HomePage() {
   return (
     <>
-      <Suspense fallback={<SpinLoader />}>
+      <Suspense fallback={<Loading />}>
         <PostFeatured />
       </Suspense>
 
-      <Suspense fallback={<SpinLoader />}>
+      <Suspense fallback={<Loading />}>
         <PostsList />
       </Suspense>
     </>
