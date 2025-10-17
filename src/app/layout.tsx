@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: {
     default: "The Blog - Este é um blog com Next.js",
-    template: "$s | The Blog",
+    template: "%s | The Blog",
   },
   description: "Blog criado com Next.js",
 };
