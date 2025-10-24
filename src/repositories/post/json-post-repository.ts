@@ -1,7 +1,7 @@
 import { PostModel } from "@/models/post/post-models";
-import { PostRepository } from "./post-repository";
-import { resolve } from "path";
 import { readFile } from "fs/promises";
+import { resolve } from "path";
+import { PostRepository } from "./post-repository";
 
 const ROOT_DIR = process.cwd();
 const JSON_POSTS_FILE_PATH = resolve(
@@ -12,7 +12,7 @@ const JSON_POSTS_FILE_PATH = resolve(
   "posts.json"
 );
 
-const SIMULATE_WAIT_IN_MS = 0;
+const SIMULATE_WAIT_IN_MS = 5000;
 
 export class JsonPostRepository implements PostRepository {
   private async simulateWait() {

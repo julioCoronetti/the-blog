@@ -6,7 +6,7 @@ import Loading from "./loading";
 export default async function HomePage() {
   return (
     <>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading className="min-h-20 mb-16" />}>
         <PostFeatured />
       </Suspense>
 
