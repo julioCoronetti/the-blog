@@ -8,9 +8,6 @@ export default async function HomePage() {
     <>
       <Suspense fallback={<Loading className="min-h-20 mb-16" />}>
         <PostFeatured />
-      </Suspense>
-
-      <Suspense fallback={<Loading />}>
         <PostsList />
       </Suspense>
     </>
