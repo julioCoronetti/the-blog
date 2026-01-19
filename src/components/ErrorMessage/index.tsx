@@ -1,4 +1,4 @@
-"user client";
+"use client";
 
 type ErrorMessageProps = {
   pageTitle: string;
