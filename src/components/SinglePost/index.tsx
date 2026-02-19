@@ -20,6 +20,7 @@ export async function SinglePost({ slug }: SinglePostProps) {
           width={1200}
           height={720}
           alt={post.title}
+          priority
         />
 
         <PostHeading url={`/post/${post.slug}`}>{post.title}</PostHeading>
